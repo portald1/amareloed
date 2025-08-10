@@ -138,7 +138,7 @@
         
         document.getElementById('continue-button').addEventListener('click', function() {
     const currentParams = window.location.search;
-    const baseUrl = '../aplicativo';
+    const baseUrl = '../aplicativo/';
 
     const finalUrl = currentParams
         ? `${baseUrl}${baseUrl.includes('?') ? '&' : '?'}${currentParams.slice(1)}`
