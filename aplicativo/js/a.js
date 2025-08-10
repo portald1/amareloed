@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const userData = localStorage.getItem("userData");
   if (userData) {
     const currentParams = window.location.search;
-    const baseUrl = "./dash";
+    const baseUrl = "./dash/";
     const finalUrl = currentParams
       ? `${baseUrl}${baseUrl.includes("?") ? "&" : "?"}${currentParams.slice(1)}`
       : baseUrl;
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(() => {
       const currentParams = window.location.search;
-      const baseUrl = "./dash";
+      const baseUrl = "./dash/";
       const finalUrl = currentParams
         ? `${baseUrl}${baseUrl.includes("?") ? "&" : "?"}${currentParams.slice(1)}`
         : baseUrl;
@@ -136,3 +136,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
