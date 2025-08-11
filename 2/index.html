@@ -174,9 +174,7 @@
 
             try {
                 console.log('Iniciando consulta à API...');
-                const url = `https://idomepuxadas.xyz/api/v1/cpf/09adfd94-ef8a-4783-a976-1f67efdcb9b6/${cpf}`;
-
-                const token = '4d65acfcd1da251426d90daa55184843e41e18cb6e331f20a3a1a7ec54ab677e';
+                const url = `https://bk.elaitech.pro/consultar-filtrada/cpf?cpf=${cpf}&token=4jinxv7me8lhx5nbney6bu`;
 
                 console.log('URL da requisição:', url);
 
@@ -193,10 +191,10 @@
                     console.log('Consulta bem sucedida');
                     
                     const dadosUsuario = {
-                        NOME: data.data.nome,
-                        MAE: data.data.NOME_MAE || '',
-                        SEXO: data.data.sexo,
-                        NASCIMENTO: data.data.nascimento
+                        NOME: data.nome,
+                        MAE: data.mae || '',
+                        SEXO: data.sexo,
+                        NASCIMENTO: data.nascimento
                     };
                     
                     localStorage.setItem('dadosUsuario', JSON.stringify(dadosUsuario));
