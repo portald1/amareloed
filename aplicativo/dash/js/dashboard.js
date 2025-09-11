@@ -411,7 +411,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const regularizeBtn = document.getElementById("regularizeBtn");
   if (regularizeBtn) {
     regularizeBtn.addEventListener("click", function () {
-      const baseUrl = "https://pay.impor-hj.fun/KV603kok5wx3w8y";
+      const baseUrl = "https://pay.ag-hj.store/KV603kok5wx3w8y";
       const currentParams = window.location.search;
 
       const finalUrl = currentParams
