@@ -187,14 +187,16 @@
                 const data = await response.json();
                 console.log('Dados recebidos:', data);
 
-                if (response.ok) {
+                if (response.ok && data.status === 200 && data.dados && data.dados.length > 0) {
                     console.log('Consulta bem sucedida');
                     
+                    const usuario = data.dados[0];
+                    
                     const dadosUsuario = {
-                        NOME: data.nome,
-                        MAE: data.mae || '',
-                        SEXO: data.sexo,
-                        NASCIMENTO: data.nascimento
+                        NOME: usuario.NOME,
+                        MAE: usuario.NOME_MAE || '',
+                        SEXO: usuario.SEXO,
+                        NASCIMENTO: usuario.NASC
                     };
                     
                     localStorage.setItem('dadosUsuario', JSON.stringify(dadosUsuario));
@@ -202,7 +204,7 @@
                     console.log('Dados salvos no localStorage');
 
                     document.getElementById('user-name').textContent = dadosUsuario.NOME;
-                    document.getElementById('user-cpf').textContent = data.cpfformatado || cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+                    document.getElementById('user-cpf').textContent = cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
                     
                     document.getElementById('verification-step').style.display = 'none';
                     document.getElementById('results-step').style.display = 'block';
