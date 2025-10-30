@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", function () {
       novaUrl.set("cpf", cpf);
 
       // Redirecionar para a página chat.html com todos os parâmetros
-      window.location.href = `./chat/index.html?${novaUrl.toString()}`;
+      window.location.href = `chat/index.html?${novaUrl.toString()}`;
     } catch (error) {
       console.error("Erro ao processar dados para redirecionamento:", error);
       alert(

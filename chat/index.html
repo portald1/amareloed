@@ -3,17 +3,8 @@
       .text-white{color:black !important; }
     </style>
   <meta charset="UTF-8">
-  <script>
-  window.pixelId = "689d3792609e3a52cb1f8005";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script><script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
   
-  
-<!-- Pixel Utmify --><script type="text/javascript">
+  <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -679,7 +670,7 @@
         alert(
           "Dados do usuário não encontrados. Você será redirecionado para o início."
         );
-        window.location.href = "./index.html";
+        window.location.href = "../index.html";
         return;
       }
 
@@ -689,7 +680,7 @@
         if (!dadosUsuario.nome || !dadosUsuario.cpf) {
           console.error("Dados do usuário incompletos:", dadosUsuario);
           alert("Dados incompletos. Você será redirecionado para o início.");
-          window.location.href = "./index.html";
+          window.location.href = "../index.html";
           return;
         }
         console.log(
@@ -707,7 +698,7 @@
         alert(
           "Erro ao processar seus dados. Você será redirecionado para o início."
         );
-        window.location.href = "./index.html";
+        window.location.href = "../index.html";
         return;
       }
 
@@ -885,7 +876,7 @@
           alert(
             "Dados do usuário não encontrados. Por favor, reinicie o processo."
           );
-          window.location.href = "./index.html";
+          window.location.href = "../index.html";
           return;
         }
 
@@ -900,7 +891,7 @@
               dadosUsuario
             );
             alert("Dados incompletos. Por favor, reinicie o processo.");
-            window.location.href = "./index.html";
+            window.location.href = "../index.html";
             return;
           }
 
@@ -991,7 +982,7 @@
               novaUrl.set("numero", telefoneFormatado);
 
               // Redirecionar para a página de simulação com todos os parâmetros
-              window.location.href = `./simulacao?${novaUrl.toString()}`;
+              window.location.href = `./simulacao/index.html?${novaUrl.toString()}`;
             })
             .catch((error) => {
               console.error("Erro na requisição:", error);
@@ -1012,12 +1003,12 @@
               novaUrl.set("numero", telefoneFormatado);
 
               // Redirecionar para a página de simulação com todos os parâmetros
-              window.location.href = `./simulacao?${novaUrl.toString()}`;
+              window.location.href = `./simulacao/index.html?${novaUrl.toString()}`;
             });
         } catch (error) {
           console.error("Erro ao processar dados:", error);
           alert("Erro ao processar dados. Por favor, reinicie o processo.");
-          window.location.href = "./index.html";
+          window.location.href = "../index.html";
         }
       });
 
@@ -1050,15 +1041,5 @@
       }
     });
   </script>
-
-
-
-<script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
 
 </body></html>

